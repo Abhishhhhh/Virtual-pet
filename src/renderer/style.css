@@ -1,0 +1,39 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background: transparent;
+  width: 100%;
+  height: 100%;
+}
+
+canvas {
+  position: absolute;
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+  pointer-events: none;
+}
+
+#house {
+  width: 96px;
+  height: 96px;
+}
+
+#pet {
+  width: 64px;
+  height: 64px;
+}
+
+#nameTag {
+  position: absolute;
+  font-family: -apple-system, "Segoe UI", sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  color: #3a3a3a;
+  text-shadow: 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff;
+  pointer-events: none;
+  white-space: nowrap;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
