@@ -26,7 +26,7 @@ Either download the ZIP from the green **Code** button on GitHub and unzip
 it, or clone it:
 
 ```
-git clone https://github.com/<your-username>/virtual-pet.git
+git clone https://github.com/Abhishhhhh/virtual-pet.git
 cd virtual-pet
 ```
 
