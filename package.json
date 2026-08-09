@@ -1,0 +1,38 @@
+{
+  "name": "virtual-pet",
+  "version": "0.1.0",
+  "description": "A cute pixel companion that lives on your screen — follows your cursor, plays, naps, and lives in its own little house.",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dist:mac": "electron-builder --mac",
+    "dist:win": "electron-builder --win",
+    "dist": "electron-builder --mac --win"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^31.0.0",
+    "electron-builder": "^24.13.3"
+  },
+  "build": {
+    "appId": "com.yourname.virtualpet",
+    "productName": "Virtual Pet",
+    "files": [
+      "main.js",
+      "preload.js",
+      "preload-rename.js",
+      "src/**/*",
+      "assets/**/*"
+    ],
+    "mac": {
+      "target": "dmg",
+      "icon": "assets/icon.png",
+      "category": "public.app-category.entertainment"
+    },
+    "win": {
+      "target": "nsis",
+      "icon": "assets/icon.png"
+    }
+  }
+}
